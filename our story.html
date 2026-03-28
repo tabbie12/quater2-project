@@ -1,113 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>OUR STORY</title>
+<head>
+  <meta charset="utf-8">
+  <title>OUR STORY</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: black;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 100px;
+      background-color: rgb(0, 255, 26);
+    }
+    .nav-links {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+    }
+    .nav-links li a {
+      display: block;
+      color: rgb(26, 3, 62);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .nav-links li a:hover {
+      background-color: aqua;
+    }
+    .profile-card {
+      background: #fff;
+      border: 2px solid #39b54a;
+      border-radius: 16px;
+      max-width: 520px;
+      margin: 20px auto;
+      padding: 18px;
+      text-align: center;
+    }
+    .profile-card .profile-photo {
+      width: 180px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #39b54a;
+      margin-bottom: 12px;
+    }
+    .profile-card h2 {
+      margin: 8px 0;
+      color: #1a1a5e;
+    }
+    .contact-info p {
+      margin: 4px 0;
+      color: #333;
+      font-size: 0.95rem;
+    }
 
-    <style>
-            body{
-                    background-color: #f4f4f4;
-            }        
-
-       h1{
-        color:black;
-       } 
-       ul{
-        list-style-type: none;
-
-        background-color: rgb(107, 168, 27);
-       }
-       li{float: left;
-
-       }
-       li a{
-        display: block;
-        color: rgb(26, 3, 62);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: dotted;
-
-       }
-    
-       .story{
-         color: rgb(25, 29, 25);
-         margin: 10px;
-         padding: 10px;
-         width: 30%;
-         display: inline-block;
-        } 
-
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 20px;
-            padding-right: 100px;
-            background-color:rgb(0, 255, 26);
-
-        }
-        .nav-links li a:hover{
-            
-            background-color: aqua;
-
-        }
-.story{
-    background-color: aquamarine; 
-    padding:30px;
-    border-radius: 20px;
-}
-  .story-cointainer{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-  }
-
-
-
-
-
-   
-    </style>
-    </head>
-    <body>
-        <nav>
-            <div> 
-                <h1>OUR STORY</h1>
-            </div>
-
-            <div> 
-                <ul class = 'nav-links' >
-                    <li><a href="our story.html">home</a></li>
-                    <li><a href="fashion.html">Fashion project</a></li>
-                    <li><a href="gallery.html">gallery</a></li>
-                    <li><a href="about.html">about us</a></li>
-
-                </ul>
-
-            </div>
-            
-
-        </nav>
-        
-        
-          <div class="story-cointainer">
-    
-    <div class="flex-item story">
-        <img src="Snapchat-281722156 (2).jpg" alt="Snapchat-281722156" width="300" length="250">
-        <p>
-         Hi my name is Tabitha Atieno.<br>
-         I am in grade 10 and I love coding a lot.I study in chidren's garden home and school.<br>
-         I love swimming a lot and hanging out with friends.<br> in future i would love to be a wonderfull lawyer.<br> coding is very enjoyable .for me I nomally code when I am free that is during my leisure activities.  
-        </p>
+    .story-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+    .story {
+      background-color: aquamarine;
+      color: rgb(25, 29, 25);
+      margin: 10px;
+      padding: 30px;
+      border-radius: 20px;
+      width: calc(50% - 20px);
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .story img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>
+      <h1>OUR STORY</h1>
     </div>
-    <div class="flex-item story">
-        <img src="IMG_20250622_161156_739@-599528293.jpg" alt="IMG_20250622_161156_739" width="300" length="250"> 
-        <p>
-            Hi my name is Evie Maina.<br>I am in grade 12 and like my friend ,I also love coding.<br>
-            For my case reading novels and  writting are my thing.<br>I on the other hand i would like to be the best author ever known to all generations.
-        </p> 
+    <ul class="nav-links">
+      <li><a href="our story.html">home</a></li>
+      <li><a href="fashion.html">Fashion project</a></li>
+      <li><a href="gallery.html">gallery</a></li>
+      <li><a href="about.html">about us</a></li>
+    </ul>
+  </nav>
 
+  <section class="profile-card">
+    <img src="Snapchat-281722156 (2).jpg" alt="Tabitha Atieno portrait" class="profile-photo">
+    <h2>Tabitha Atieno</h2>
+    <div class="contact-info">
+      <p>Email: tabitha@example.com</p>
+      <p>Phone: +254 700 000000</p>
+      <p>Instagram: @tabitha_atieno</p>
     </div>
+  </section>
 
-</div>
-    </body>
+  <div class="story-container">
+    <div class="story">
+      <img src="Snapchat-281722156 (2).jpg" alt="Tabitha Atieno portrait" width="300" height="250">
+      <h2>My Contacts</h2>
+      <p>
+        Email: tabitha@example.com<br>
+        Phone: +254 700 000000<br>
+        Instagram: @tabitha_atieno
+      </p>
+      <p>
+        Hi my name is Tabitha Atieno.<br>
+        I am in grade 10 and I love coding a lot. I study in children's garden home and school.<br>
+        I love swimming a lot and hanging out with friends.<br>
+        In future I would love to be a wonderful lawyer.<br>
+        Coding is very enjoyable. For me I normally code when I am free, that is during my leisure activities.
+      </p>
+    </div>
+    <div class="story">
+      <img src="IMG_20250622_161156_739@-599528293.jpg" alt="Evie Maina portrait" width="300" height="250">
+      <p>
+        Hi my name is Evie Maina.<br>and
+        I am in grade 12 and like my friend, I also love coding.<br>
+        For my case reading novels and writing are my thing.<br>
+        I on the other hand would like to be the best author ever known to all generations.
+      </p>
+    </div>
+  </div>
+</body>
 </html>
