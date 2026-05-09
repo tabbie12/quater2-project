@@ -1,80 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>OUR GALLERY</title>
-  <style>
-    body {
-      background: #f4f4f4;
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    h1 { color: #1a1a5e; text-align: center; }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(150px, 1fr));
-      gap: 16px;
-      justify-items: center;
-      margin-top: 20px;
-    }
-    .gallery .card {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 5px;
-      max-width: 220px;
-      text-align: center;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-    }
-  </style>
+  <title>Gallery | Tabitha & Evie</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <h1>OUR GALLERY</h1>
-  <div class="gallery">
-    <div class="card">
-      <h2>I AM EVIE MAINA</h2>
-      <img src="IMG_20250622_161156_739@-599528293.jpg" alt="Evie Maina portrait" width="300" height="250">
+<body class="gallery-page">
+  <header class="navbar page-wrapper">
+    <div class="navbar-brand">Gallery</div>
+    <ul class="nav-menu">
+      <li><a href="our story.html">Home</a></li>
+      <li><a href="fashion.html">Fashion</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </header>
+
+  <main class="page-wrapper page-section">
+    <section class="section-card">
+      <h1>Our Gallery</h1>
+      <p>Browse a selection of our favorite photos, portraits, and creative snapshots from our project.</p>
+    </section>
+
+    <div class="gallery-grid">
+      <article class="gallery-card">
+        <img src="IMG_20250622_161156_739@-599528293.jpg" alt="Evie Maina portrait" loading="lazy">
+        <h3>Evie Maina</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="Snapchat-281722156 (2).jpg" alt="Tabitha Atieno portrait" loading="lazy">
+        <h3>Tabitha Atieno</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="Snapchat-1717734810.jpg" alt="Portrait of Tabitha with friends" loading="lazy">
+        <h3>Fun Moments</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="Snapchat-1768806029 (1).jpg" alt="Creative portrait" loading="lazy">
+        <h3>Creative Image</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="hootshoes.jpg" alt="Hoot shoes photo" loading="lazy">
+        <h3>Fashion Focus</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="bc9e4c33-7e83-45ad-9077-f657bd13d781.jpeg" alt="Fashion inspiration" loading="lazy">
+        <h3>Style Inspiration</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="Snapchat-943896981 (3).jpg" alt="Portrait with smile" loading="lazy">
+        <h3>Bright Moments</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="Snapchat-94941483.jpg" alt="Stylish portrait" loading="lazy">
+        <h3>Stylish Portrait</h3>
+      </article>
+      <article class="gallery-card">
+        <img src="1000007031.jpg" alt="Creative photo" loading="lazy">
+        <h3>Creative Photo</h3>
+      </article>
     </div>
-    <div class="card">
-      <h2>I AM TABITHA ATIENO</h2>
-      <img src="Snapchat-281722156 (2).jpg" alt="Tabitha Atieno portrait" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>New Photo</h2>
-      <img src="Snapchat-1717734810.jpg" alt="TABITHA ATIENO" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>I AM EVIE MAINA</h2>
-      <img src="IMG_20250622_161156_739@-599528293.jpg" alt="Evie Maina portrait" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>I AM TABITHA ATIENO</h2>
-      <img src="Snapchat-281722156 (2).jpg" alt="Tabitha Atieno portrait" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>New Photo</h2>
-      <img src="Snapchat-1717734810.jpg" alt="TABITHA ATIENO" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>Another Photo</h2>
-      <img src="Snapchat-1768806029 (1).jpg" alt="Another image" width="300" height="250">
-    </div>
-    <div class="card">
-      <h2>Hoot Shoes</h2>
-      <img src="hootshoes.jpg" alt="Hoot shoes image" width="300" height="250">
-    </div>
-  </div>
-</body>
-</html>
-  </div>
-</body>
-</html>
-    </div>
-  </div>
+  </main>
+
+  <footer class="site-footer page-wrapper">
+    <p>Photos from our journey — bright, personal, and memorable.</p>
+  </footer>
 </body>
 </html>
