@@ -209,12 +209,28 @@ button,
   object-fit: cover;
 }
 
-.about-page .hero {
+.home-hero {
+  background: radial-gradient(circle at top left, rgba(31, 103, 214, 0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(29, 143, 93, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(239, 248, 255, 0.95));
+  border-color: rgba(31, 103, 214, 0.18);
+}
+
+.hero-ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  box-shadow: inset 0 0 0 1px rgba(29, 143, 93, 0.08);
+  pointer-events: none;
+}
+
+.about-hero {
   background: linear-gradient(135deg, rgba(237, 237, 255, 0.95), rgba(255, 246, 255, 0.82));
   border-color: rgba(159, 77, 255, 0.18);
 }
 
-.about-page .hero::before {
+.about-hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -223,34 +239,14 @@ button,
   pointer-events: none;
 }
 
-.about-page .eyebrow {
-  background: rgba(159, 77, 255, 0.16);
-  color: #6f2fa0;
+.about-page .page-section {
+  padding-top: 2.5rem;
 }
 
-.about-page .section-card,
-.about-page .feature-card {
-  border-color: rgba(159, 77, 255, 0.14);
-}
-
-.gallery-page .section-card {
-  border-color: rgba(243, 135, 168, 0.14);
-  background: rgba(255, 250, 250, 0.96);
-}
-
-.gallery-page .gallery-card {
-  border-color: rgba(243, 135, 168, 0.1);
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.fashion-page .section-card {
-  border-color: rgba(255, 175, 93, 0.18);
-  background: rgba(255, 250, 240, 0.96);
-}
-
-.fashion-page .fashion-card {
-  border-color: rgba(255, 175, 93, 0.12);
-  background: rgba(255, 255, 255, 0.95);
+.hero-media.about-media img {
+  border-radius: 32px;
+  border: 1px solid rgba(159, 77, 255, 0.12);
+  box-shadow: 0 30px 80px rgba(159, 77, 255, 0.12);
 }
 
 .section-card,
@@ -282,7 +278,9 @@ button,
   padding: 3rem 1.5rem;
 }
 
+.home-highlights,
 .profile-grid,
+.feature-grid,
 .info-grid,
 .gallery-grid,
 .fashion-grid {
@@ -290,9 +288,22 @@ button,
   gap: 1.5rem;
 }
 
-.profile-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin: 0 1.5rem 2rem;
+.home-highlights {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 2rem 1.5rem;
+}
+
+.highlight-card {
+  padding: 2rem;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #ffffff, #f5fbff);
+  border: 1px solid rgba(29, 143, 93, 0.12);
+  box-shadow: 0 20px 50px rgba(29, 143, 93, 0.08);
+}
+
+.highlight-card h2 {
+  margin-bottom: 0.75rem;
+  color: #154f76;
 }
 
 .feature-grid,
@@ -302,17 +313,32 @@ button,
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.profile-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 0 1.5rem 2rem;
+}
+
 .profile-card {
   text-align: center;
   padding-top: 1rem;
+}
+
+.profile-card.home-profile {
+  background: linear-gradient(180deg, #ffffff, #eff8ff);
+  border-color: rgba(29, 143, 93, 0.14);
+}
+
+.profile-card.home-profile .profile-title {
+  color: #175f79;
 }
 
 .profile-card img {
   width: 220px;
   height: 220px;
   object-fit: cover;
-  border-radius: 26px;
+  border-radius: 28px;
   margin: 0 auto 1.3rem;
+  border: 4px solid rgba(29, 143, 93, 0.12);
 }
 
 .profile-card .profile-title {
@@ -339,13 +365,58 @@ button,
   margin: 0;
 }
 
-.story-section {
+.story-section,
+.timeline-section {
   padding: 0 1.5rem 3rem;
 }
 
-.story-section .section-card {
+.home-story .section-card {
   max-width: 940px;
   margin: 0 auto;
+}
+
+.about-feature {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(159, 77, 255, 0.14);
+}
+
+.about-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.timeline-card {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.timeline-item {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(246, 237, 255, 0.88);
+  border: 1px solid rgba(159, 77, 255, 0.12);
+}
+
+.timeline-date {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: #8c6add;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .site-footer {
@@ -354,6 +425,10 @@ button,
   color: var(--muted);
   background: rgba(255, 255, 255, 0.88);
   border-top: 1px solid rgba(29, 143, 93, 0.12);
+}
+
+.about-page .site-footer {
+  border-top-color: rgba(159, 77, 255, 0.12);
 }
 
 .gallery-grid {
